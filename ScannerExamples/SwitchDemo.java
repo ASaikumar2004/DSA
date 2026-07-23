@@ -1,3 +1,4 @@
+package ScannerExamples;
 import java.util.Scanner;
 
 public class SwitchDemo {
@@ -13,10 +14,13 @@ public class SwitchDemo {
 	}
 
 	public static void main(String[] args) {
+		
 		Scanner sc = new Scanner(System.in);
+		int choice;
+		do {
 		display();
-		System.out.println("Enter tour choiice");
-		int choice = sc.nextInt();
+		System.out.println("Enter your choiice");
+		choice = sc.nextInt();
 		switch (choice) {
 		case 1 -> System.out.println("veg biryani order successfully");
 		case 2 -> System.out.println("ordered pizza");
@@ -24,6 +28,8 @@ public class SwitchDemo {
 		case 4 -> System.out.println("ordered burger");
 		case 5 -> System.out.println("exit successfully");
 		}
+		}
+		while(choice!=5);
 
 		sc.close();
 	}
