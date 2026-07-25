@@ -20,6 +20,7 @@ public class Arraymethods {
 		System.out.println(Arrays.equals(arr1, arr2));
 		System.out.println(Arrays.compare(arr1, arr2));
 		
+		
 
 	}
 }
