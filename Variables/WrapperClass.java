@@ -7,5 +7,6 @@ public class WrapperClass {
 		double annual=Double.parseDouble(args[1]);
 		double annual1=annual*salary;
 		System.out.println(annual1);
+		
 	}
 }
