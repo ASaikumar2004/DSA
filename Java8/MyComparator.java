@@ -26,6 +26,7 @@ public class MyComparator{
 		al.add(47);
 		al.add(34);
 		al.add(22);
+		
 		Comparator<Integer> c=(i1,i2)->(i1<i2)?1:(i1>i2)?-1:0;
 		Collections.sort(al,c);
 		
