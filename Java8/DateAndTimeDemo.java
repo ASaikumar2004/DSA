@@ -3,9 +3,11 @@ package Java8;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.Period;
+import java.time.Year;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class DateAndTimeDemo {
 	
@@ -56,12 +58,26 @@ public class DateAndTimeDemo {
 		
 		//Zone
 		
-		ZonedDateTime zone=ZonedDateTime.now();
-		System.out.println(zone);
+		ZonedDateTime zoneindia=ZonedDateTime.now();
+		System.out.println(zoneindia);
 		
 		
 		ZonedDateTime usa=ZonedDateTime.now(ZoneId.of("America/New_York"));
 		System.out.println(usa);
+		
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the year");
+		int n=sc.nextInt();
+		
+		if(Year.isLeap(n)) {
+			System.out.println("LeapYear");
+		}
+		else {
+			System.out.println("Not a leap year");
+		}
+		
 	}
 
 }
