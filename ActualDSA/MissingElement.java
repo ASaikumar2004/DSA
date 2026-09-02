@@ -10,7 +10,7 @@ public class MissingElement {
 			arraysum=arraysum+arr[i];
 		}
 		
-		for(int i=0;i<arr.length;i++) {
+		for(int i=0;i<=arr.length;i++) {
 			actualsum=actualsum+i;
 		}
 		int missing=actualsum-arraysum;
