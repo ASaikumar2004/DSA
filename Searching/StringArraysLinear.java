@@ -1,4 +1,4 @@
-package Arrays;
+package Searching;
 
 public class StringArraysLinear {
 	
@@ -17,9 +17,4 @@ public class StringArraysLinear {
 		
 		System.out.println("elemet found at index: "+arr[index]+" "+index);
 	}
-	
-	
-	
-	
-
 }
