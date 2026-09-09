@@ -5,7 +5,7 @@ public class StringBinarySearch {
 	public static void main(String[] args) {
 		
 		String arr[]= {"Apple","Ball","Car","Dog","Eagle"};
-		String target="Cat";
+		String target="Car";
 		
 		int low=0;
 		int high=arr.length-1;
@@ -13,15 +13,19 @@ public class StringBinarySearch {
 		for(int i=0;i<arr.length;i++) {
 			
 			int mid=(low+high)/2;
+			//lexographical comparision
+			int cmp=arr[mid].compareTo(target);
 			
-			if(arr[mid].equals(target)) {
-				System.out.println("element found at index: "+mid);
+			if(cmp==0)
+			{
+				System.out.println("found At : "+mid);
 				return;
 			}
-			else if(arr[mid].charAt(0)>target.charAt(0)) {
+			else if(cmp>0) {
 				high=mid-1;
 			}
-			else {
+			else
+			{
 				low=mid+1;
 			}
 		}
