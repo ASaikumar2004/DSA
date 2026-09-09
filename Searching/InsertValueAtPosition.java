@@ -20,9 +20,7 @@ public class InsertValueAtPosition {
 			else {
 				right = mid - 1;
 			}
-
 		}
-
 		System.out.println(left);
 	}
 
